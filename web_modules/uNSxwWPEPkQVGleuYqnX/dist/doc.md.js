@@ -1,4 +1,4 @@
-import { r as require, l as litElement, a as litHtml, i as index$2 } from '../../__require-e92a5a7e.js';
+import { l as litElement, a as litHtml, i as index$2, r as require } from '../../__require-e92a5a7e.js';
 import { r as renderWith } from '../../index-96b85fb1.js';
 import { B as BaseSwatch } from '../../BaseSwatch-6b4c68c5.js';
 
