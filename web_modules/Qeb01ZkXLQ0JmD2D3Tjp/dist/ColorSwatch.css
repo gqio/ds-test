@@ -1,0 +1,19 @@
+.sample {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 4px;
+  min-height: 150px;
+  box-shadow: 2px 2px 8px lightgray; }
+
+.accessibilityLevels {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: baseline;
+  grid-gap: 8px; }
+
+.passed {
+  border-bottom: 2px solid limegreen; }
+
+.failed {
+  border-bottom: 2px solid tomato; }

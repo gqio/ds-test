@@ -1,0 +1,13 @@
+.sample {
+  width: unset;
+  height: unset;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  box-sizing: border-box;
+  background-color: #00808080;
+  box-shadow: 2px 2px 8px lightgrey;
+}
+.sample > div {
+  padding: 2px;
+  background: white;
+}

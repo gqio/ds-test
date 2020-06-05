@@ -1,0 +1,13 @@
+:host {
+  background-color: var(--colors-secondary);
+}
+
+:host(:hover) {
+}
+
+:host(:focus) {
+}
+
+:host([selected]) {
+  background-color: var(--colors-primary);
+}

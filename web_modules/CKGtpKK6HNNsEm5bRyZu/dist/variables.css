@@ -1,0 +1,46 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 05 Jun 2020 15:29:27 GMT
+ */
+
+
+:root{
+  --space-base-xxs: 2rem;
+  --space-base-xs: 4rem;
+  --space-base-s: 8rem;
+  --space-base-m: 16rem;
+  --space-base-l: 32rem;
+  --space-base-xl: 64rem;
+  --space-base-default: 16rem;
+  --space-stack-xxs: 0 0 2rem 0;
+  --space-stack-xs: 0 0 4rem 0;
+  --space-stack-s: 0 0 8rem 0;
+  --space-stack-m: 0 0 16rem 0;
+  --space-stack-l: 0 0 32rem 0;
+  --space-stack-xl: 0 0 64rem 0;
+  --space-stack-default: 0 0 16rem 0;
+  --space-inline-xxs: 0 2rem 0 0;
+  --space-inline-xs: 0 4rem 0 0;
+  --space-inline-s: 0 8rem 0 0;
+  --space-inline-m: 0 16rem 0 0;
+  --space-inline-l: 0 32rem 0 0;
+  --space-inline-xl: 0 64rem 0 0;
+  --space-inline-default: 0 16rem 0 0;
+  --space-inset-xxs:  2rem 2rem 2rem 2rem;
+  --space-inset-xs:  4rem 4rem 4rem 4rem;
+  --space-inset-s:  8rem 8rem 8rem 8rem;
+  --space-inset-m:  16rem 16rem 16rem 16rem;
+  --space-inset-l:  32rem 32rem 32rem 32rem;
+  --space-inset-xl:  64rem 64rem 64rem 64rem;
+  --space-inset-default:  16rem 16rem 16rem 16rem;
+  --space-inset-squish-xs: 2rem 4rem 2rem 4rem;
+  --space-inset-squish-s: 4rem 8rem 4rem 8rem;
+  --space-inset-squish-m: 8rem 16rem 8rem 16rem;
+  --space-inset-squish-l: 16rem 32rem 16rem 32rem;
+  --space-inset-squish-xl: 32rem 64rem 32rem 64rem;
+  --space-inset-stretch-xs: 4rem 2rem 4rem 2rem;
+  --space-inset-stretch-s: 8rem 4rem 8rem 4rem;
+  --space-inset-stretch-m: 16rem 8rem 16rem 8rem;
+  --space-inset-stretch-l: 32rem 16rem 32rem 16rem;
+  --space-inset-stretch-xl: 64rem 32rem 64rem 32rem;
+}

@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/webcomponents-dev.png" />
+  <meta name="description" content="lea-design-system Design System">
+  <title>Lea Design System / Typography</title>
+  <style>
+    
+:root {
+  --color-hue: 180;
+  --color-lum: 25%;
+  --wcd-color-primary: hsla(var(--color-hue), 100%, var(--color-lum), 1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+* {
+  box-sizing: content-box;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  display: flex;
+  background-color: white;
+  overflow: hidden;
+}
+header {
+  background-color: var(--wcd-color-primary);
+  color: white;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+header > * {
+  opacity: 0.7;
+  margin: 0.25rem 0 0.5rem;
+  padding: 0.25rem 0.6rem 0.25rem 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+  border-left: .1rem solid transparent;
+}
+header > *:hover {
+  opacity:1;
+}
+header svg:active {
+  background: hsla(var(--color-hue), 100%, calc(var(--color-lum) - 6%), 1);
+}
+#navexpander:checked ~ header label {
+  opacity:1;
+  border-color: currentColor;
+}
+nav {
+  display:none;
+  background-color: hsla(var(--color-hue), 14%, 96%, 1);
+  flex-shrink: 0;
+  width: 16rem;
+}
+#navexpander:checked ~ nav {
+  display: block
+}
+nav h2 {
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin: 0.5rem;
+  font-size: 80%;
+}
+nav section {
+  padding: 0px 0.5rem 0.5rem;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+li {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.tabs {
+  display: flex;
+  font-size: 0.8rem;
+}
+.tabs li {
+  opacity: 0.8;
+}
+.tabs li.selected {
+  opacity: 1;
+  border-bottom: 2px solid var(--wcd-color-primary);
+}
+nav li.selected {
+  background-color: hsla(var(--color-hue), 76%, 15%, 0.1);
+  border-radius: 0.25rem;
+}
+main {
+  min-height: 0px;
+  flex-grow: 1;
+  overflow: auto; 
+}
+article {
+  padding: 0 1rem;
+  margin: 0 auto 2rem;
+  max-width: 960px;
+}
+.initial {
+  text-align: center;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  width: 2rem;
+  font-size: 2rem;
+  border-radius: .25rem;
+  background-color: hsla(var(--color-hue), 50%, 85%, 0.3);
+  color: var(--wcd-color-primary);
+  border: 1px solid currentColor;
+}
+
+  </style>
+  <script type="module">
+    import 'https://unpkg.com/construct-style-sheets-polyfill@2.3.5/dist/adoptedStyleSheets.js';
+    import '/web_modules/SFUwexs60v3RjHXdXGSW/dist/doc.md.js';
+  </script>
+</head>
+<body>
+  <input type="checkbox" id="navexpander" checked style="display:none"/>
+  
+<header>
+<img src="/webcomponents-dev.png" alt="logo" style="filter: grayscale(1) brightness(5)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path d="M16.436 15.085l3.94 4.01a1 1 0 0 1-1.425 1.402l-3.938-4.006a7.5 7.5 0 1 1 1.423-1.406zM10.5 16a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+
+<label for="navexpander">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M5 15h14v2H5zm0-8h14v2H5zm0 4h14v2H5z" fill="currentColor" fill-rule="evenodd"></path>
+  </svg>
+</label>
+</header>
+  
+<nav>
+  <section style="display:flex;align-items:center; margin: 2rem .25rem 1rem">
+    <span class="initial">L</span>
+    <h1>Lea Design System</h1>
+  </section>
+  <section aria-label="Components" role="group">
+    <h2>Components</h2>
+    <ul>
+      
+<li >
+  <a href="/button/doc.md.html">
+    Button
+  </a>
+</li>
+<li >
+  <a href="/colors/doc.md.html">
+    Colors
+  </a>
+</li>
+<li >
+  <a href="/icons/doc.md.html">
+    Icons
+  </a>
+</li>
+<li >
+  <a href="/opacity/doc.md.html">
+    Opacity
+  </a>
+</li>
+<li >
+  <a href="/radii/doc.md.html">
+    Radii
+  </a>
+</li>
+<li >
+  <a href="/shadows/doc.md.html">
+    Shadows
+  </a>
+</li>
+<li >
+  <a href="/spacing/doc.md.html">
+    Spacing
+  </a>
+</li>
+<li class="selected">
+  <a href="/typography/doc.md.html">
+    Typography
+  </a>
+</li>
+<li >
+  <a href="/z-index/doc.md.html">
+    Z Index
+  </a>
+</li>
+    </ul>
+  </section>
+</nav>
+  <main>
+    
+    <article class="markdown-body"><h1>Typography</h1>
+<picture style="display:flex;justify-content:center">
+<img height="100px" width="100%" style="object-fit:cover;object-position: 30% 30%" src="https://images.unsplash.com/photo-1461958508236-9a742665a0d5?ixlib=rb-1.2.1&#x26;ixid=eyJhcHBfaWQiOjEyMDd9&#x26;auto=format&#x26;fit=crop&#x26;w=1000&#x26;q=80"></picture>
+<h1>Font family</h1>
+<mdjs-story mdjs-story-name="families"></mdjs-story>
+<h1>Font Sizes</h1>
+<mdjs-story mdjs-story-name="size"></mdjs-story>
+<h1>Font weight</h1>
+<mdjs-story mdjs-story-name="weights"></mdjs-story></article>
+  </main>
+<body>
