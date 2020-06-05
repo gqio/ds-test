@@ -16762,7 +16762,7 @@ try {
   });
 } catch (e) {}
     const icons = () => html$1` <icon-swatch
-  .fontURL=${"/web_modules/WZLJl3LJvmVXirfXEE6I/dist/fonts.css"}
+  .fontURL=${"./web_modules/WZLJl3LJvmVXirfXEE6I/dist/fonts.css"}
   .tokens=${iconTokens.filter(
     (token) => token.attributes.category === "content"
   )}
