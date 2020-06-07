@@ -1,6 +1,6 @@
-import { l as litElement, a as litHtml, i as index$2, r as require } from '../../__require-e92a5a7e.js';
+import { l as litElement, a as litHtml, i as index$2, r as require } from '../../__require-a679080a.js';
 import { r as renderWith } from '../../index-96b85fb1.js';
-import { B as BaseSwatch } from '../../BaseSwatch-6b4c68c5.js';
+import { B as BaseSwatch } from '../../BaseSwatch-91ce4770.js';
 
 var colors = [
  {
