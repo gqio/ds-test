@@ -1,6 +1,6 @@
-import { a as litHtml, r as require } from '../../__require-a679080a.js';
+import { a as litHtml, r as require } from '../../__require-aec3d0bc.js';
 import { r as renderWith } from '../../index-96b85fb1.js';
-import { B as BaseSwatch } from '../../BaseSwatch-91ce4770.js';
+import { B as BaseSwatch } from '../../BaseSwatch-e8b6eb3c.js';
 
 var shadows = [
  {

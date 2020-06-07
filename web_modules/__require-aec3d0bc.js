@@ -407,8 +407,8 @@ function require(library){
      case 'react' : return index$3
      case 'react-dom' : return index$5
      case 'theme-ui' : return index_esm$2
-      default: throw new Error('Unable to find '+library);
+        default: throw new Error('Unable to find '+library);
+      }
     }
-  }
 
 export { litHtml as a, index$3 as b, index_esm$1 as c, index$5 as d, index$2 as i, litElement as l, require as r };
