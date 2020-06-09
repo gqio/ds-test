@@ -1,6 +1,6 @@
-import { l as litElement, r as require } from '../../__require-aec3d0bc.js';
-import { r as renderWith } from '../../index-96b85fb1.js';
-import { B as BaseSwatch } from '../../BaseSwatch-e8b6eb3c.js';
+import { l as litElement, r as require } from '../../__require-f214fa60.js';
+import { r as renderWith } from '../../index-6d22d2ca.js';
+import { B as BaseSwatch } from '../../BaseSwatch-0300e27b.js';
 
 var typography = [
  {
