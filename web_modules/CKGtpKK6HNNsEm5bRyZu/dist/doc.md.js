@@ -1,6 +1,20 @@
-import { a as litHtml, r as require, l as litElement } from '../../__require-f214fa60.js';
-import { r as renderWith } from '../../index-6d22d2ca.js';
-import { B as BaseSwatch } from '../../BaseSwatch-0300e27b.js';
+import { a as litHtml, r as renderWith, l as litElement } from '../../components,lit-element,lit-html,react,react-dom,theme-ui-c3d2a715.js';
+import { B as BaseSwatch } from '../../BaseSwatch-8e1e473f.js';
+
+const modules = ['@lion/core','@lion/tabs','@thebespokepixel/es-tinycolor','@theme-ui/color-modes','@theme-ui/components','lit-element','lit-html','react','react-dom','theme-ui'];
+function require(library) {
+  const idx = modules.findIndex(
+    (it) =>
+      it === library ||
+      it.replace(/^((@[^/]*\/)?[^/@]*)(@[^/]*)?(\/[^@]*)?$/, '$1$4') ===
+        library // removes version pinned, if any
+  );
+  if (idx === -1) {
+    console.error(`Import ${library} not found in project scope: ${modules}`);
+  } else {
+    return import('../../components,lit-element,lit-html,react,react-dom,theme-ui-c3d2a715.js').then(function (n) { return n.e; }).then((module) => module['packd_export_'+idx]);
+  }
+}
 
 var spacing = [
  {

@@ -1,4 +1,4 @@
-import { l as litElement } from './__require-f214fa60.js';
+import { l as litElement } from './components,lit-element,lit-html,react,react-dom,theme-ui-c3d2a715.js';
 
 const sheet = new CSSStyleSheet();
 sheet.replaceSync("table {\n  width: 100%;\n  font-size: small;\n  border-collapse: collapse; }\n  table th {\n    text-align: start;\n    opacity: 0.6; }\n  table th,\n  table td {\n    padding: 12px; }\n  table td {\n    border-top: 1px solid #d5d5d5;\n    vertical-align: top; }\n  table tr:hover {\n    background-color: #f6f6f6; }\n\n.sample {\n  height: 96px;\n  width: 192px; }\n");

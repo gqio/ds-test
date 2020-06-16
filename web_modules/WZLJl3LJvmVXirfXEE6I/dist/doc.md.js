@@ -1,5 +1,19 @@
-import { l as litElement, r as require } from '../../__require-f214fa60.js';
-import { r as renderWith } from '../../index-6d22d2ca.js';
+import { l as litElement, r as renderWith } from '../../components,lit-element,lit-html,react,react-dom,theme-ui-c3d2a715.js';
+
+const modules = ['@lion/core','@lion/tabs','@thebespokepixel/es-tinycolor','@theme-ui/color-modes','@theme-ui/components','lit-element','lit-html','react','react-dom','theme-ui'];
+function require(library) {
+  const idx = modules.findIndex(
+    (it) =>
+      it === library ||
+      it.replace(/^((@[^/]*\/)?[^/@]*)(@[^/]*)?(\/[^@]*)?$/, '$1$4') ===
+        library // removes version pinned, if any
+  );
+  if (idx === -1) {
+    console.error(`Import ${library} not found in project scope: ${modules}`);
+  } else {
+    return import('../../components,lit-element,lit-html,react,react-dom,theme-ui-c3d2a715.js').then(function (n) { return n.e; }).then((module) => module['packd_export_'+idx]);
+  }
+}
 
 var iconTokens = [
  {
@@ -16761,7 +16775,7 @@ try {
     }
   });
 } catch (e) {}
-    const icons = () => html$1` <icon-swatch
+    const icons = () => html$1`<icon-swatch
   .fontURL=${"./web_modules/WZLJl3LJvmVXirfXEE6I/dist/fonts.css"}
   .tokens=${iconTokens.filter(
     (token) => token.attributes.category === "content"

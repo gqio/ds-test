@@ -1,98 +1,102 @@
-import { a as litHtml, r as require, l as litElement } from '../../__require-f214fa60.js';
-import { r as renderWith } from '../../index-6d22d2ca.js';
-import { B as BaseSwatch } from '../../BaseSwatch-0300e27b.js';
+import { a as litHtml, r as renderWith, l as litElement } from '../../components,lit-element,lit-html,react,react-dom,theme-ui-c3d2a715.js';
+import { B as BaseSwatch } from '../../BaseSwatch-8e1e473f.js';
+
+const modules = ['@lion/core','@lion/tabs','@thebespokepixel/es-tinycolor','@theme-ui/color-modes','@theme-ui/components','lit-element','lit-html','react','react-dom','theme-ui'];
+function require(library) {
+  const idx = modules.findIndex(
+    (it) =>
+      it === library ||
+      it.replace(/^((@[^/]*\/)?[^/@]*)(@[^/]*)?(\/[^@]*)?$/, '$1$4') ===
+        library // removes version pinned, if any
+  );
+  if (idx === -1) {
+    console.error(`Import ${library} not found in project scope: ${modules}`);
+  } else {
+    return import('../../components,lit-element,lit-html,react,react-dom,theme-ui-c3d2a715.js').then(function (n) { return n.e; }).then((module) => module['packd_export_'+idx]);
+  }
+}
 
 var radii = [
  {
-  "value": "0px",
+  "value": "0",
   "original": {
    "value": "0"
   },
-  "name": "size-border-radius-none",
+  "name": "border-radius-none",
   "attributes": {
-   "category": "size",
-   "type": "border",
-   "item": "radius",
-   "subitem": "none"
+   "category": "border",
+   "type": "radius",
+   "item": "none"
   },
   "path": [
-   "size",
    "border",
    "radius",
    "none"
   ]
  },
  {
-  "value": "0.125px",
+  "value": "0.125rem",
   "original": {
    "value": "0.125rem"
   },
-  "name": "size-border-radius-sm",
+  "name": "border-radius-sm",
   "attributes": {
-   "category": "size",
-   "type": "border",
-   "item": "radius",
-   "subitem": "sm"
+   "category": "border",
+   "type": "radius",
+   "item": "sm"
   },
   "path": [
-   "size",
    "border",
    "radius",
    "sm"
   ]
  },
  {
-  "value": "0.25px",
+  "value": "0.25rem",
   "original": {
    "value": "0.25rem"
   },
-  "name": "size-border-radius-default",
+  "name": "border-radius-default",
   "attributes": {
-   "category": "size",
-   "type": "border",
-   "item": "radius",
-   "subitem": "default"
+   "category": "border",
+   "type": "radius",
+   "item": "default"
   },
   "path": [
-   "size",
    "border",
    "radius",
    "default"
   ]
  },
  {
-  "value": "0.375px",
+  "value": "0.375rem",
   "original": {
    "value": "0.375rem"
   },
-  "name": "size-border-radius-md",
+  "name": "border-radius-md",
   "attributes": {
-   "category": "size",
-   "type": "border",
-   "item": "radius",
-   "subitem": "md"
+   "category": "border",
+   "type": "radius",
+   "item": "md"
   },
   "path": [
-   "size",
    "border",
    "radius",
    "md"
   ]
  },
  {
-  "value": "0.5px",
+  "value": "0.5rem",
   "original": {
    "value": "0.5rem"
   },
-  "name": "size-border-radius-lg",
+  "name": "border-radius-lg",
   "attributes": {
-   "category": "size",
-   "type": "border",
-   "item": "radius",
-   "subitem": "lg"
+   "category": "border",
+   "type": "radius",
+   "item": "lg"
   },
   "path": [
-   "size",
    "border",
    "radius",
    "lg"
@@ -103,15 +107,13 @@ var radii = [
   "original": {
    "value": "9999px"
   },
-  "name": "size-border-radius-full",
+  "name": "border-radius-full",
   "attributes": {
-   "category": "size",
-   "type": "border",
-   "item": "radius",
-   "subitem": "full"
+   "category": "border",
+   "type": "radius",
+   "item": "full"
   },
   "path": [
-   "size",
    "border",
    "radius",
    "full"
